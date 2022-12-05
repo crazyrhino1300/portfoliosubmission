@@ -15,6 +15,9 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
   }
+  p, li{
+    font-family: 'Montserrat', sans-serif;
+  }
   .top{
     /* height: 100vh; */
   }
@@ -100,6 +103,9 @@
     padding-top: 2rem;
     padding-right: 5rem;
     padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
     transition: background 2s linear;
 }
@@ -108,11 +114,14 @@
     background: white;
 }
 .grid-small{
-
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 70vw;
 
 }
 .row1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -129,13 +138,37 @@
     background-color: rgba(234, 232, 226 );
     outline:1px black;
 }
-.koala{
+.koala, .china{
     
     width: 90%
     
 }
+.pichold1{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 90%;
+}
+.pichold2{
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;;
+}
+.pichold3{
+    
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom:10px;
+    background-color: black;
+    border-radius: 15px;
+}
+.drink{
+    height: 80%;
+}
 .caption{
     border-top: 1px solid rgba(64, 64, 64);
+   
+    border-radius: 15px;
     padding-top: 1rem;;
     width: 100%;
     display: flex;
@@ -147,6 +180,8 @@
     height: 20rem;
     outline: 1px black
 }
+
+/* flip cards taken from W3 Schools: https://www.w3schools.com/howto/howto_css_flip_card.asp*/
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     border-radius: 15px;
@@ -188,6 +223,10 @@
   .flip-card-front {
     background-color: rgba(234, 232, 226 );
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
   
   /* Style the back side */
