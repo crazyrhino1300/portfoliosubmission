@@ -1,0 +1,80 @@
+/* body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+  }
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+}
+li {
+    font-family: 'Montserrat', sans-serif;
+}
+.cardList{
+    font-size:22px
+}
+figcaption{
+    font-family: 'Montserrat', sans-serif;
+}
+.nav{
+    padding-top: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid rgba(64, 64, 64, 0.2); */
+}
+.nav-right {
+    display: flex;
+    padding-right: 5rem;
+    
+}
+.navbar-brand {
+    font-family:  'Montserrat', sans-serif;
+    font-size: 36px;
+    padding-left: 5rem;
+    padding-top: 2rem;
+    font-weight: 400;
+}
+.nav-item {
+    font-family:  'Montserrat', sans-serif;
+    padding-right: 3rem;
+    font-weight: 200;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+   
+}
+.card-critique {
+    
+    display: flex;
+    border: 1px solid rgba(64, 64, 64);
+    border-radius: 15px;
+
+}
+.critique-body{
+    align-items: center;
+    padding: 2rem;
+}
+.critique-photo-holder{
+    background-color: #ffffed;
+    border-right:1px solid rgba(64, 64, 64);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+.critique-photo{
+    width: 18rem;
+    object-fit: scale-down;
+    border-radius: 15px;
+    transition: transform .2s;
+}
+.critique-photo:hover{
+    transform: scale(2.5)
+}

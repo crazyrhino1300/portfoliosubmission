@@ -18,9 +18,7 @@
   p, li{
     font-family: 'Montserrat', sans-serif;
   }
-  .top{
-    /* height: 100vh; */
-  }
+
   
   /* gradient created by Alison Quaglia at 
   https://www.sliderrevolution.com/resources/css-animated-background/ */
@@ -72,10 +70,10 @@
     width: 45vw;
     justify-content: flex-end;
     align-items: center;
-
 }
 .pic-box{
-    padding-right:0rem;
+    padding-top:2rem;
+    background-color: transparent;
 }
 .right-col{
     width: 50vw;
@@ -88,7 +86,7 @@
 .textbox {
     width: 37vw;
     font-family: 'Montserrat', sans-serif;
-    padding-top: 5rem;
+    padding-top: 3.5rem;
     font-weight: 200;
     padding-left: 4rem;
 }
@@ -111,7 +109,7 @@
 }
 
 .middle:hover{
-    background: white;
+    background: #F5F5DC;
 }
 .grid-small{
     padding-top: 1rem;
@@ -241,3 +239,9 @@
   .back-content{
     padding: 2rem;;
   }
+
+.footer {
+    display:flex;
+    height: 20vh;
+    align-items: center;
+}
