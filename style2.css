@@ -1,0 +1,408 @@
+
+  
+body{
+    background-color: black;
+    background:black;
+    padding-bottom:0;
+    
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+p, li{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* gradient created by Alison Quaglia at 
+https://www.sliderrevolution.com/resources/css-animated-background/ */
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, black, #BABABA 300px, black);
+    position: absolute;
+  }
+  .wrapper h1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 888;
+    text-transform: uppercase;
+  }
+  .wrapper div {
+    height: 20px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    animation: 4s linear infinite;
+      box-shadow:
+      0 0 60px 5px #fff,  /* inner white */
+      0 0 100px 10px #f0f, /* middle magenta */
+      0 0 140px 20px #fff; /* outer cyan */
+  }
+  div .dot {
+    height: 50px;
+    width: 2px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: -185%;
+    right: -2%;
+  }
+  .wrapper div:nth-child(1) {
+    top: 20%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+     animation-delay: 2sec;
+  }
+  .wrapper div:nth-child(2) {
+    top: 10%;
+    left: 80%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(3) {
+    top: 30%;
+    left: 40%;
+    animation: animate 5.5s linear infinite;
+  }
+  .wrapper div:nth-child(4) {
+    top: 75%;
+    left: 75%;
+    animation: animate 7s linear infinite;
+  }
+  .wrapper div:nth-child(5) {
+    top: 90%;
+    left: 10%;
+    animation: animate 9s linear infinite;
+    animation-delay: 2sec;
+  }
+  .wrapper div:nth-child(6) {
+    top: 15%;
+    left: 60%;
+    animation: animate 7s linear infinite;
+  }
+  .wrapper div:nth-child(7) {
+    top: 70%;
+    left: 40%;
+    animation: animate 8s linear infinite;
+  }
+  .wrapper div:nth-child(8) {
+    top: 80%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(9) {
+    top: 20%;
+    left: 50%;
+    animation: animate 6s linear infinite;
+  }
+  .wrapper div:nth-child(10) {
+    top: 80%;
+    left: 70%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(11) {
+    top: 45%;
+    left: 90%;
+    animation: animate 9s linear infinite;
+  }
+  .wrapper div:nth-child(12) {
+    top: 20%;
+    left: 80%;
+    animation: animate 7s linear infinite;
+  }
+  .wrapper div:nth-child(13) {
+    top: 20%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+  }
+  .wrapper div:nth-child(14) {
+    top: 60%;
+    left: 5%;
+    animation: animate 6.5s linear infinite;
+  }
+  .wrapper div:nth-child(15) {
+    top: 90%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+     animation-delay: 1sec;
+  }
+  @keyframes animate {
+    0% {
+      transform: scale(1.3) translateY(0) 
+    }
+    100% {
+      transform: scale(0) translateY(-300px) 
+    }
+  }
+  /* animation template drawn from : 
+  https://codepen.io/diyorbek0309/pen/mdwbEve
+  by Diyorbek Olimov*/
+  
+.nav{
+  padding-top: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  /* border-bottom: 1px solid rgba(64, 64, 64, 0.2); */
+}
+.nav-right {
+  display: flex;
+  padding-right: 5rem;
+  position: absolute;
+  /* top: 10%;
+  right: 10%; */
+  
+}
+.container-fluid{
+  padding-top: 2rem;
+}
+.navbar-brand {
+  font-family:  'Montserrat', sans-serif;
+  font-size: 36px;
+  padding-left: 5rem;
+  padding-top: 2rem;
+  font-weight: 400;
+}
+.nav-item {
+  font-family:  'Montserrat', sans-serif;
+  padding-right: 3rem;
+  font-weight: 300;
+}
+.grid {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  z-index:10;
+
+}
+.left-col{
+  display: flex;
+  width: 45vw;
+  justify-content: flex-end;
+  align-items: center;
+}
+.pic-box{
+  padding-top:2rem;
+  background-color: transparent;
+}
+.right-col{
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+
+}
+.textbox {
+  width: 37vw;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 3.5rem;
+  font-weight: 200;
+  padding-left: 4rem;
+}
+.arrow-div {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.middle-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle{
+    background-image: url("Untitled-6.png");
+    background-size:contain;
+    width: 80%;
+  padding-top: 2rem;
+  padding-right: 5rem;
+  padding-left: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
+
+
+.grid-small{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 90vw;
+  height: 90vh;
+  /* Resize the background image to cover the entire container */
+  background-image: url("Untitled-6 2.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; 
+  display: flex;
+  position: relative;
+  left:0px;
+  top: 0px;
+  align-items: center;
+  justify-content: center;
+
+}
+.grid-small::before{
+  content: "";
+  background-image: url("Untitled-6 2.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; 
+  position:absolute;
+  top:0px;
+  left:0px;
+  opacity: 70%
+
+
+}
+.row1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.small-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  border: 1px solid rgba(64, 64, 64);
+  border-radius: 15px;
+  background-color: rgba(234, 232, 226 );
+  outline:1px black;
+}
+.koala, .china{
+  
+  width: 90%
+  
+}
+.pichold1{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 90%;
+}
+.pichold2{
+  display: flex;
+  justify-content: center;
+  padding-top: 4.5rem;
+}
+.pichold3{
+  
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom:10px;
+  background-color: black;
+  border-radius: 15px;
+}
+.drink{
+  height: 80%;
+}
+.caption{
+  border-top: 1px solid rgba(64, 64, 64);
+ 
+  border-radius: 15px;
+  padding-top: 1rem;;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.small-right{
+  width: 20rem;
+  height: 20rem;
+  outline: 1px black
+}
+
+/* flip cards taken from W3 Schools: https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  border-radius: 15px;
+  background-color: rgba(234, 232, 226 );
+  background-color: transparent;
+  width: 17rem;
+  height: 15rem;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg) scale(2.0);
+
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  border-radius: 50%;
+  border: 1px solid rgba(64, 64, 64);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgba(234, 232, 226 );
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: black;
+  background-color: rgba(234, 232, 226 );
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.back-content{
+  padding: 3rem;;
+}
+
+.footer {
+  display:flex;
+  height: 20vh;
+  align-items: center;
+}
